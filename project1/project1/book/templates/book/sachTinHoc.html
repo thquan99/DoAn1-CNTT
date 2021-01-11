@@ -1,0 +1,33 @@
+{% extends "pages\base.html" %}
+
+{% block title %}Sách tin học{% endblock %}
+
+{% block content %}
+<br><br>
+<div class="col-lg-9">
+    <div class="row">
+        {% for eachItem in Data %}
+        {% load static %}
+
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <a href="book/{{eachItem.id}}/">
+                    <center><img class=" card-img-top" src="{{eachItem.image.url}}" alt="" style="width: 40%;"></center>
+                </a>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <a href="book/{{eachItem.id}}">{{eachItem.title}}</a>
+                    </h4>
+                    <h5>{{eachItem.price}}$</h5>
+                    <p class="card-text">{{eachItem.review}}</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                </div>
+            </div>
+        </div>
+
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

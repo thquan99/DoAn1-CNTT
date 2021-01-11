@@ -1,0 +1,27 @@
+{% extends "pages\base.html" %}
+
+{% block title %}{{eachItem.title}}{% endblock %}
+
+{% block content %}
+{% load static %}
+<div class="col-lg-9">
+
+    <div class="card mt-4">
+      <center><img class="card-img-top img-fluid" src="{{eachItem.image.url}}" alt="" style="width:35%""></center>
+      <div class="card-body">
+        <h3 class="card-title">{{eachItem.title}}</h3>
+        <h4><strong>Giá: </strong>{{eachItem.price}}</h4>
+        <p class="card-text">{{eachItem.review}}</p>
+        <span class="text-warning">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+        <strong>Số lượng: </strong><input type="number" name="quantitys" value="1" min="1" id="number">
+          &nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-button" onclick="addCart({{eachItem.id}})">THÊM VÀO GIỎ HÀNG</button>
+        </p>
+        4.0 stars
+      </div>
+    </div>
+    <!-- /.card -->
+
+  </div>
+  <!-- /.col-lg-9 -->
+  
+{% endblock %}

@@ -1,0 +1,36 @@
+"python.linting.pylintArgs": [
+        "--load-plugins=pylint_django"
+    ],
+    "emmet.includeLanguages": {"jinja-html": "html"},
+    "emmet.triggerExpansionOnTab": true,    
+    "files.associations":{"*html":"html"},
+    "auto-close-tag.activationOnLanguage": [
+    
+
+        "xml",
+        "php",
+        "blade",
+        "ejs",
+        "jinja",
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+        "plaintext",
+        "markdown",
+        "vue",
+        "liquid",
+        "erb",
+        "lang-cfml",
+        "cfml",
+        "HTML (EEx)",
+        "HTML (Eex)",
+        "plist"
+    ],
+    "editor.find.autoFindInSelection": "always",    
+    "htmlhint.options": {
+        "doctype-first": false
+    },
+    "workbench.editorAssociations": [
+    
+    ]

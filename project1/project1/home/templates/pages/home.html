@@ -1,0 +1,172 @@
+{% extends "pages\base.html" %}
+
+{% block title %}Trang chủ{% endblock %}
+
+{% block content %}
+{% load static %}
+<div class="col-lg-9">
+
+    <div class="container">
+        <div class="mySlides">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="numbertext">1 / 3</div>
+                    <a href="sachBanChay/book/1/"><img class="card-img-top" src="{% static 'img/Dac-nhan-tam.jpg' %}" style="width: 69%"></a>
+                </div>
+                <div class="col-lg-7">
+                    <h7>Đắc nhân tâm tiếng anh có tên là How to Win Friends and Influence People của tác giả Dale
+                        Carnegie, là một trong những quyển sách bán chạy nhất thế giới. Ngoài ra, Dale Carnegie còn có
+                        những tác phẩm khác như: 40 gương thành công, quẳng gánh lo đi và vui sống, tâm lý vợ chồng…</h7>
+                </div>
+            </div>
+        </div>
+
+        <div class="mySlides">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="numbertext">2 / 3</div>
+                    <a href="sachBanChay/book/2/"><img src="{% static 'img/murach.jpg' %}" style="width:79%"></a>
+                </div>
+                <div class="col-lg-7">
+                    <h7>Cuốn sách này sẽ đưa bạn qua một hành trình học tập có cấu trúc tốt về JSP, Servlets và các công
+                        nghệ liên quan như Netbeans, Tomcat và MySQL để phát triển các ứng dụng web hoàn chỉnh. Cuốn
+                        sách đã cung cấp cho tôi kỹ năng và sự tự tin để bắt đầu xây dựng ứng dụng web của riêng mình.
+                        Cuốn sách kết thúc với một ví dụ hoàn chỉnh về thương mại điện tử được xây dựng dựa trên tác
+                        phẩm trước đó và cung cấp cho người đọc cơ sở cho sự phát triển của chính họ trong tương lai.
+                    </h7>
+                </div>
+            </div>
+        </div>
+
+        <div class="mySlides">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="numbertext">3 / 3</div>
+                    <a href="sachBanChay/book/3/"><img src="{% static 'img/Murach-html.jpg' %}" style="width:77.5%"></a>
+                </div>
+                <div class="col-lg-7">
+                    <h7>Bắt buộc đối với một lớp học. Sách của Murach sẽ giải thích bất cứ điều gì chúng sắp nói cho bạn
+                        một cách rõ ràng, cặn kẽ và như thể bạn 5 tuổi. Sau đó, họ sẽ làm điều đó một lần nữa. Sau đó,
+                        họ sẽ làm điều đó một lần nữa. Sau đó, bạn sẽ tự hỏi tại sao phải mất một cuốn sổ điện thoại có
+                        kích thước khổng lồ để dạy cho bạn điều gì đó mà bạn có thể tìm tài nguyên trực tuyến miễn phí
+                        (hợp pháp).
+
+                        Những gì tôi đang nói là HTML đã chết đơn giản và không cần đến 700 trang để hoàn thành nó.
+                    </h7>
+                </div>
+            </div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+
+    </div>
+
+    <br>
+    <div class="row">
+
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <a href="sachBanChay/book/1/"><center><img class="card-img-top" src="{% static 'img/Dac-nhan-tam.jpg' %}" alt="" style="width:69%"></center></a>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <a href="sachBanChay/book/1/">Đắc nhân tâm</a>
+                    </h4>
+                    <h5>39.2$</h5>
+                    <p class="card-text">Đắc nhân tâm tiếng anh có tên là How to Win Friends and Influence People của tác giả Dale Carnegie, là một trong những quyển sách bán chạy nhất thế giới. Ngoài ra, Dale Carnegie còn có những tác phẩm khác như: 40 gương thành công, quẳng gánh lo đi và vui sống, tâm lý vợ chồng…</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <a href="sachBanChay/book/2/"><center><img class="card-img-top" src="{% static 'img/murach.jpg' %}" alt="" style="width: 79%;"></center></a>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <a href="sachBanChay/book/2/">Murach JSP and Servlet</a>
+                    </h4>
+                    <h5>47.5$</h5>
+                    <p class="card-text">Cuốn sách này sẽ đưa bạn qua một hành trình học tập có cấu trúc tốt về JSP, Servlets và các công nghệ liên quan như Netbeans, Tomcat và MySQL để phát triển các ứng dụng web hoàn chỉnh. Cuốn sách đã cung cấp cho tôi kỹ năng và sự tự tin để bắt đầu xây dựng ứng dụng web của riêng mình.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <a href="sachBanChay/book/3/"><center><img class="card-img-top" src="{% static 'img/Murach-html.jpg' %}" alt="" style="width: 77.5%;"></center></a>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <a href="sachBanChay/book/3/">Murach: HTML5 and CSS</a>
+                    </h4>
+                    <h5>47.6$</h5>
+                    <p class="card-text">Bắt buộc đối với một lớp học. Sách của Murach sẽ giải thích bất cứ điều gì chúng sắp nói cho bạn một cách rõ ràng, cặn kẽ và như thể bạn 5 tuổi. Sau đó, họ sẽ làm điều đó một lần nữa. Sau đó, họ sẽ làm điều đó một lần nữa. </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <a href="sachBanChay/book/4/"><center><img class="card-img-top" src="{% static 'img/Hanh-trinh-ve-phuong-dong.jpg' %}" alt="" style="width: 49.5%;"></center></a>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <a href="sachBanChay/book/4/">Hành trình về phương Đông</a>
+                    </h4>
+                    <h5>34.9$</h5>
+                    <p class="card-text">Một số người chê bai cuốn sách này quá ảo, dẫn dắt và đầy mê tín. Nhưng cũng trong chính cuốn sách đã nói: “Bạn giống như một ly nước đầy, có rót thêm cũng chỉ tràn ra ngoài.” Vậy việc đầu tiên là phải đổ bớt nước ra, đồng nghĩa với việc loại trừ định kiến mới có thể thu thập thêm nhiều kiến thức.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <a href="sachBanChay/book/8/" onclick="return confirm('Bạn có chắc không!')"><center><img class="card-img-top" src="{% static 'img/Thoi-mien-bang-ngon-tu.jpg' %}" alt="" style="width: 77.5%;"></center></a>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <a href="sachBanChay/book/8/">Thôi miên bằng ngôn từ</a>
+                    </h4>
+                    <h5>26.6$</h5>
+                    <p class="card-text">Cuốn sách này dành cho bạn, dành cho tôi, dành cho những người theo đuổi con chữ. Tất nhiên dành cho tất cả những ai muốn học cách chinh phục người khác bằng “ngôn từ – lời nói”.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <a href="sachBanChay/book/6/"><center><img class="card-img-top" src="{% static 'img/Nghe-thuat-giao-tiep-de-thanh-cong.jpg' %}" alt="" style="width: 77.5%;"></center></a>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <a href="sachBanChay/book/9/"> Nghệ thuật giao tiếp để thành công</a>
+                    </h4>
+                    <h5>23.3$</h5>
+                    <p class="card-text">Trong các bữa tiệc, bạn đứng gần một nhóm người mà bạn mong muốn nhập bọn. Khi đó hãy nghĩ đến một vài câu bạn có thể sử dụng như mũi nhọn để xâm nhập vào nhóm đối tượng. “Xin lỗi, dường như tôi nghe thấy các vị đang nói đến…” và sau đó tuỳ từng trường hợp cụ thể mà tiếp tục
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.row -->
+
+</div>
+<!-- /.col-lg-9 -->
+
+{% endblock %}
